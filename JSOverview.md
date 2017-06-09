@@ -166,14 +166,14 @@ While
 Do-while
   Define: do {} while (condition)
   Notes: loop's body is executed at least once before the condition is tested
-Exiting
-  Break: immediately terminate a loop, does not return value
-  Return: immediately terminates a function, returns value
-  Continue: keeps going
 For each
   Define: object.forEach(callback, argument)
   Callback: (element, index, list) => {}
   Argument: value to use as this (reference Object)
+Exiting
+  Break: immediately terminate a loop, does not return value
+  Return: immediately terminates a function, returns value
+  Continue: keeps going
 
 ## Funciton STuff
 
