@@ -135,7 +135,7 @@ Destructive
 ## Functions
 
 Function declaration
-  Define: var regular = function (){} or function regular(){}
+  Define: function() {} or function regular(){}
   Invoke: regular()
   Name: regular.name = "name"
   Hoisted: yes
@@ -175,8 +175,40 @@ Exiting
   Return: immediately terminates a function, returns value
   Continue: keeps going
 
-## Funciton STuff
+## Functional Programming
 
-Sleep with callback: window.setTimeout(callback, milliseconds)
-Bind
-  Def: function.bind(this, args) => function(args)
+Callbacks
+  Sleep: window.setTimeout(callback, milliseconds)
+This
+  Bind: .bind(this, args)
+  Call: .call(this, [args])
+  Apply: .appy(this, args)
+
+## Object Oriented Programming
+
+Constructor
+  Implicit: function Name(arg) {this.arg = arg}
+  Explicit: function Name(arg) {return{arg = arg}}
+  Invoke: new Name(arg)
+  Get: .constructor
+  Check if property only directly available: hasOwnProperty(property)
+Inheritance
+  Pattern:
+    1. Define parent
+      function Parent(arg) {this.arg = arg}
+    2. Define child calling on parent
+      function Child(arg) {Parent.call(this, arg)}
+    3. Inherit from parent prototype
+      Child.prototype = Object.create(Parent.prototype)
+    4. Extend child
+      Child.prototype.method = function (){}
+  Check inheritance: child instanceof parent
+Classes
+  Expression: class Name {}
+  Declaration: const Name = class {}
+  Initialize: constructor(arg) {this.arg = arg}
+  Methods: name() {}
+  Invoke: new Name(arg)
+  Inheritance: class Child extends Parent {}
+    Super: constructor(arg) {super(arg)}
+    Methods: name() {super.name()}

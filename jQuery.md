@@ -26,6 +26,7 @@ Modifying
 Selecting
   Parent: .parent()
   Child: .children()
+  Value: .val()
   Nth child: $(".target:nth-child(n)")
   Even/odd elements :  $(".target:even/odd")
 
@@ -34,3 +35,4 @@ Selecting
 Document ready: $(document).ready(function() {})
 Events handler: $("selector").on("eventname", function(){ //action })
 Prevent default: in events handler, function(event){ event.preventDefault()}
+Stop propagation: event.stopPropagation();
