@@ -200,7 +200,9 @@ Inheritance
       function Child(arg) {Parent.call(this, arg)}
     3. Inherit from parent prototype
       Child.prototype = Object.create(Parent.prototype)
-    4. Extend child
+    4. Set child constructor
+      Child.prototype.constructor = Child
+    5. Extend child
       Child.prototype.method = function (){}
   Check inheritance: child instanceof parent
 Classes
