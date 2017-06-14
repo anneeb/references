@@ -1,4 +1,4 @@
-# Javascript: Overview
+# Javascript: General
 
 ## Basics
 
@@ -135,7 +135,7 @@ Destructive
 ## Functions
 
 Function declaration
-  Define: function() {} or function regular(){}
+  Define: function() {} or function regular() {}
   Invoke: regular()
   Name: regular.name = "name"
   Hoisted: yes

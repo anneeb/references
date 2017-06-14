@@ -38,3 +38,7 @@ Adding HTML: element.innerHTML = "text"
 Adding style: element.style.property = "value"
 Append element to existing DOM node: target.appendChild(element)
 Remove selected node: .remove()
+
+##
+
+Add event listener: .addEventListener("action", callback)
