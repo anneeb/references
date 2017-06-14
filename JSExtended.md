@@ -37,3 +37,18 @@ Show with handlebars
     target.innerHTML = html
 
 ## Asynchronous JavaScript and XML (Ajax)
+
+Set up
+  Library: <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  Document ready: $(document).ready(function(){})
+Get
+  Define: $.get("source", function(data){})
+  Fail: .fail(function(error){})
+  Done: .done(function(data) {}
+Ajax
+  $.ajax(
+    {url: url,
+    contentType: 'application/json',
+    dataType: 'jsonp',
+    success: callback
+  })

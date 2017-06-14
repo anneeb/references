@@ -7,7 +7,7 @@ Selectors
   By element: $("element")
   By class: $(".class")
   By ID: $("#ID")
-  Modify entire document: $("body")  
+  Modify entire body: $("body")  
 
 ## Element methods
 
