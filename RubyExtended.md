@@ -43,6 +43,16 @@ User input
   CLI will wait for user input and enter/return
 Link to another file: require_relative
 
+## APIs
+
+OpenURI
+  Parse URL: uri = URI.parse(URL)
+  Get: response = Net::HTTP.get_response(uri)
+  Parse: JSON.parse(response.body)
+RestClient
+  Gem: require 'rest-client'
+  Get and parse: JSON.parse(RestClient.get('url'))
+
 ## Scraping
 
 Document requirements: nokogiri, open-uri
