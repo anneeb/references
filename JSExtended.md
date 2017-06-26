@@ -36,7 +36,7 @@ Show with handlebars
   5. Insert HTML
     target.innerHTML = html
 
-## Asynchronous JavaScript and XML (Ajax)
+## Asynchronous JavaScript and XML (AJAX)
 
 Set up
   Library: <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -52,3 +52,8 @@ Ajax
     dataType: 'jsonp',
     success: callback
   })
+
+## Fetch and Promises
+
+Define: fetch(url, {body})
+Parse JSON: .then(res => res.json())

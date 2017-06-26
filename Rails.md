@@ -196,3 +196,23 @@ Class methods
   Password conformation: object.password_confirmation("string")
     If match -> can use object.save
     If false -> cannot use object.save
+
+## APIs
+
+Simple Internal endpoint
+  In routes.rb,
+    get 'route', to: controller#action
+  In controller.rb,
+    def action
+      render plain: text
+    end
+  In page.html.erb,
+    <script type="text/javascript">
+      $(function () {
+        $(".js-button").on('click', function() {
+          $.get("route", function(data) {
+            $('#target').text(data);
+          })
+        })
+      })
+    </script>
