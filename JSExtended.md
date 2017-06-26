@@ -53,7 +53,7 @@ Ajax
     success: callback
   })
 
-## Fetch and Promises
+## Fetch
 
 Define: fetch(url, {body})
 Parse JSON: .then(res => res.json())
