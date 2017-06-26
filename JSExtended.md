@@ -57,3 +57,24 @@ Ajax
 
 Define: fetch(url, {body})
 Parse JSON: .then(res => res.json())
+
+## Modular Coding
+
+Named
+  Export: export default { key: value, key: value }
+  Import: import newName from 'relative path'
+  Import: import { key } from 'relative path'
+Default
+  Export: export default Object
+  Import: import Object from 'relative path'
+
+## Babel
+
+In .babelrc,
+  { "presets": ["es2015", "react"],
+    "plugins": ["plugin", "plugin"]  }
+Plugins
+  React: babel-preset-es2015, babel-preset-react
+  ES2015 destructing: transform-es2015-destructuring
+  Object rest and spread: babel-plugin-transform-object-rest-spread
+  Class properties: babel-plugin-transform-class-properties

@@ -16,10 +16,12 @@ Index.js
 Elements
   Create: React.createElement('tag', {properties}, [components])
     Class property: className
+    For label: htmlFor
   Render: ReactDOM.render(element, target)
 Components
   Create: React.createClass({component specifications})
     Required: render() {return element}
-  ES6: class Name extends React.Component {}
-
-## JSX
+  ES6: class Name extends React.Component {render() {return element}}
+JSX
+  Create: class Name extends React.Component {render() {return (react html)}}
+  Import: <ClassName />
