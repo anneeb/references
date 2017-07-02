@@ -86,7 +86,6 @@ Join model forms
       end
     end
 
-
 ## Generators
 
 General

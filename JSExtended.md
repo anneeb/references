@@ -58,14 +58,13 @@ Ajax
 Define: fetch(url, {body})
 Parse JSON: .then(res => res.json())
 
-## Modular Coding
+## WebPack
 
-Named
-  Export: export default { key: value, key: value }
-  Import: import newName from 'relative path'
-  Import: import { key } from 'relative path'
-Default
+Export
+  Named: export default { key: value, key: value }
   Export: export default Object
+Import
+  Named: import newName from 'relative path' or import { key } from 'relative path'
   Import: import Object from 'relative path'
 
 ## Babel
