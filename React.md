@@ -87,6 +87,12 @@ Access
   Select: const Component = ({prop, prop}) => {return()}
 Default
   Define: Component.defaultProps = {key: value}
+Children
+  Define: <Component>children</Component>
+  Access: this.props.children
+  Map: React.Children.map(this.props.children, callback)
+  Clone: React.cloneElement(element, {props})
+  Count: React.Children.count(this.props.children)
 
 ## PropTypes
 
@@ -128,3 +134,20 @@ Controlled
 Uncontrolled
   In render: <input defaultValue="defaultValue" ref={(input) => this.input = input} />
   In handler: this.input.value
+
+## Routing
+
+History
+  Define: window.history
+  Back: .back()
+  Forward: .forward()
+  New state and url: .pushState(state, title, url)
+Router and routes
+  Set up: import { BrowserRouter as Router, Route } from 'react-router-dom'
+  Define: <Router><Route path="path" component={Component} /></Router>
+Link
+  Set up: import { Link } from 'react-router-dom'
+  Define: <Link to="path">Text</Link>
+NavLink
+  Set up: import { NavLink } from 'react-router-dom'
+  Define: <NavLink exact to="path" activeStyle={{prop: 'value'}}>Text</NavLink>
