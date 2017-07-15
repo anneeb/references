@@ -123,18 +123,18 @@ Controllers
 Resources
   Define: resource
   Create: Name attribute_name:data_type
-  ├── db/migrate/timstamp_create_names.rb
-  ├── app/models/name.rb
-  ├── app/views/names
-  ├── app/controllers/name_controller.rb
-  │   └── resources :names
-  ├── app/helpers/name_helper.rb
-  ├── app/assets/javascripts/name.coffee
-  ├── app/assets/stylesheets/name.scss
-  ├── spec/models/name_spec.rb
-  ├── spec/factories/names.rb
-  ├── spec/controllers/names_controller_spec.rb
-  └── spec/helpers/names_helper_spec.rb
+    ├── db/migrate/timstamp_create_names.rb
+    ├── app/models/name.rb
+    ├── app/views/names
+    ├── app/controllers/name_controller.rb
+    │   └── resources :names
+    ├── app/helpers/name_helper.rb
+    ├── app/assets/javascripts/name.coffee
+    ├── app/assets/stylesheets/name.scss
+    ├── spec/models/name_spec.rb
+    ├── spec/factories/names.rb
+    ├── spec/controllers/names_controller_spec.rb
+    └── spec/helpers/names_helper_spec.rb
   Delete: rails d resource Name
 
 ## Cookies and Sessions
