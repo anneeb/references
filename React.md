@@ -151,3 +151,5 @@ Link
 NavLink
   Set up: import { NavLink } from 'react-router-dom'
   Define: <NavLink exact to="path" activeStyle={{prop: 'value'}}>Text</NavLink>
+Switch
+  Define: <Switch> </Switch>
