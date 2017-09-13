@@ -1,5 +1,15 @@
 # Javascript: Extended
 
+## Module Exports
+
+Import
+  Define: require('path')
+  Relative path: './path'
+  Node Modules: 'path'
+Export
+  Multiple exports: export.property = object
+  Single export: module.exports = object
+
 ## XML Http Request (XHR)
 
 Get

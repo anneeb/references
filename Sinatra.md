@@ -1,6 +1,7 @@
 # Sinatra
 
 ## General
+
 Basics
   Run code: rackup app.rb
   app.rb: class App < Sinatra::Base <br> body <br> end
